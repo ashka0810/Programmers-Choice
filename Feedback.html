@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <title>FEEDBACK</title>
+        <link rel="stylesheet" href="style.css">
+       
+        <script src="JQuery/JS/jquery-3.6.0.min.js"></script>
+
+
+    </head>
+    <body>
+
+        <div align=center; id="header">
+            <img src="Images/logo.png" align="left" style="width:150px;margin-top:-60px">
+            <a href="Index.html" onmouseover="hovin(this);" onmouseout="hovout(this);" style="font-size:30px;color:#343148FF;margin-left:840px;text-decoration: none">Home</a>
+            <a href="ExploreCourse.html" onmouseover="hovin(this);" onmouseout="hovout(this);" style="font-size:30px;color:#343148FF;margin-left:50px;text-decoration: none" >Explore Courses</a>
+            <a href="tips.html" onmouseover="hovin(this);" onmouseout="hovout(this);" style="font-size:30px;color:#343148FF;margin-left:50px;text-decoration: none">Tips</a>
+
+        </div>
+
+        <hr>
+        <div style="background-color: beige;  margin-bottom: -20px; height:600px;padding-top: 5px">
+            <h2 style="font-size:30px;font-family: georgia"><center>FEEDBACK</center></h2>
+            <hr>
+            <br>
+
+            <table align="center" style="border-spacing: 15px;">
+                <form action="thanku.html">
+                    <tr>
+                        <td><label class="formStyling" >First Name : </label></td>
+                        <td><input class="formStyling" id="txtFName" type="text" placeholder="Enter First Name" required>
+                            <span id="lblError" style="color: red;font-size:15px;"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="formStyling" >Last Name : </label> </td>
+                        <td><input class="formStyling" id="txtLName" type="text" placeholder="Enter Last Name" required>
+                            <span id="lblError1" style="color: red;font-size:15px;"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="formStyling">Email Address : </label></td> 
+                        <td><input class="formStyling" type="email" placeholder="Enter Email Address" required> </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type ="button" id="btn1" value="Hide">
+                            <input type ="button" id="btn2" value="Show">
+                        </td> 
+                    </tr>
+                        <tr id="tr1">
+                            <td><label class="formStyling">Contact Number : </label> </td>
+                            <td><input class="formStyling" type="text" placeholder="Enter contact details"></td>
+                        </tr>
+                        <tr id="tr2">
+                            <td><label class="formStyling">Did you like our website? </label></td>
+                            <td><input type="radio" name="like" value="No" class="formStyling"> No
+                                <input type="radio" name="like" value="yes" class="formStyling">Yes </td>
+                        </tr>
+                        <tr id="tr3">
+                            <td><label class="formStyling">We would like your suggestions.? </label></td>
+                            <td><textarea rows="4" cols="20" class="formStyling"></textarea></td>
+                        </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Submit" class="formStyling">&nbsp;&nbsp;
+                            <input type="Reset" value="Reset" class="formStyling"></td>
+                    </tr>
+
+                </form>
+            </table>
+        </div>     
+
+
+        <hr>
+        <div align="center" id="footer">
+            <br>
+            <br>
+            <a href="#top"><img src="Images/scrollup.png" style="height:50px;width:100px;background-size: cover;border: 0px;margin-top: 5px;" ></a>
+            <a href="ContactUs.html" onmouseover="hovin(this);" onmouseout="hovout(this);" style="font-size:30px;color:#343148FF;margin-left:850px;text-decoration: none">Contact Us</a>
+            <a href="Aboutus.html" onmouseover="hovin(this);" onmouseout="hovout(this);" style="font-size:30px;color:#343148FF;margin-left: 50px;text-decoration: none" >About Us</a>
+            <a href="Feedback.html" onmouseover="hovin(this);" onmouseout="hovout(this);" style="font-size:30px;color:#343148FF;margin-left: 50px;text-decoration: none">Feedback</a>
+        </div>
+
+        <script>
+            $(document).ready(function(){
+                $("#txtFName").keypress(function (e) {
+                    var keyCode = e.keyCode || e.which;
+                    $("#lblError").html("");
+                    var regex = /^[A-Za-z ]+$/;
+                    var isValid = regex.test(String.fromCharCode(keyCode));
+                    if (!isValid) {
+                        $("#lblError").html("Only Alphabets allowed.");
+                    }
+                    return isValid;
+                });
+                
+                 $("#txtLName").keypress(function (e) {
+                    var keyCode = e.keyCode || e.which;
+                    $("#lblError").html("");
+                    var regex = /^[A-Za-z ]+$/;
+                    var isValid = regex.test(String.fromCharCode(keyCode));
+                    if (!isValid) {
+                        $("#lblError1").html("Only Alphabets allowed.");
+                    }
+                    return isValid;
+                });
+
+
+                $("input").focus(function(){
+                    $(this).css("background-color", "yellow");
+                });
+                $("input").blur(function(){
+                    $(this).css("background-color", "pink");
+                });
+                $("#tr1,#tr2,#tr3").hide();
+                $("#btn2").click(function () {
+                    $("#tr1,#tr2,#tr3").show();
+                });
+
+                $("#btn1").click(function () {
+                    $("#tr1,#tr2,#tr3").hide();
+                });
+            });
+
+
+            /**$("#show/hide").ready(function(){
+                $("#hide").click(function(){
+                    $("show/hide").hide();
+                });
+                $("#show").click(function(){
+                    $("show/hide").show();
+                });
+            });*/        
+
+
+        </script>
+         <script src="jscript.js"></script>
+    </body>
+</html>

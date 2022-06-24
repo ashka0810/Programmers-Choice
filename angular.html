@@ -1,0 +1,182 @@
+<html>
+    <head>
+
+        <title>ANGULAR</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="JQuery/JS/jquery-3.6.0.min.js"></script>
+        <script type = "text/javascript" language = "javascript">
+         $(document).ready(function() {
+
+            $("#show2").click(function () {
+               $(".mydiv2").fadeIn( 1000 );
+            });
+
+            $("#hide2").click(function () {
+               $(".mydiv2").fadeOut( 1000 );
+            });
+				
+         });
+      </script>
+    </head>
+    <body>
+        <div id="container">
+            <div align=center; id="header">
+                <img src="Images/logo.png" align="left" style="width:150px;margin-top:-60px">
+                <a href="Index.html" onmouseover="hovin(this);" onmouseout="hovout(this);" style="font-size:30px;color:#343148FF;margin-left:840px;text-decoration: none">Home</a>
+                <a href="ExploreCourse.html" onmouseover="hovin(this);" onmouseout="hovout(this);" style="font-size:30px;color:#343148FF;margin-left:50px;text-decoration: none" >Explore Courses</a>
+                <a href="tips.html" onmouseover="hovin(this);" onmouseout="hovout(this);" style="font-size:30px;color:#343148FF;margin-left:50px;text-decoration: none">Tips</a>
+
+            </div>
+
+            <hr>
+
+        </div>
+
+        <div class="main1">
+            <p>
+            <h1 id="styles" align="center">Angular tutorial</h1>
+            <font id="styling"> Angular is a platform and framework for building single-page client applications using HTML and TypeScript.Angular is written in TypeScript. It implements core and optional functionality as a set of TypeScript    ibraries that you import into your apps.</font>
+
+            <h1 id="styles" align="center"> Features of angular </h1>
+            <font id="styling"> <u>(1)CROSS PLATFORM</u><br>
+
+                Progressive Web Apps:<br>
+                -> Use modern web platform capabilities to deliver app-like experiences. High performance, offline, and zero-step installation.<br><br>
+
+                Native:<br>
+                -> Build native mobile apps with strategies from Cordova, Ionic, or NativeScript.<br><br>
+
+                Desktop:<br>
+                -> Create desktop-installed apps across Mac, Windows, and Linux using the same Angular methods you've learned for the web plus the ability to access native OS APIs.<br><br>
+
+                <u>(2)SPEED AND PERFORMANCE</u><br>
+
+                Code Generation:<br>
+                -> Angular turns your templates into code that's highly optimized for today's JavaScript virtual machines, giving you all the benefits of hand-written code with the productivity of a framework.<br><br>
+
+                Universal:<br>
+                -> Serve the first view of your application on Node.js®, .NET, PHP, and other servers for near-instant rendering in just HTML and CSS. Also paves the way for sites that optimize for SEO.<br><br>
+
+                Code Splitting:<br>
+                -> Angular apps load quickly with the new Component Router, which delivers automatic code-splitting so users only load code required to render the view they request.<br><br>
+
+                <u>(3)PRODUCTIVITY</u><br>
+
+                Templates:
+                -> Quickly create UI views with simple and powerful template syntax.<br><br>
+
+                Angular CLI:
+                -> Command line tools: start building fast, add components and tests, then instantly deploy.<br><br>
+
+                IDEs:
+                -> Get intelligent code completion, instant errors, and other feedback in popular editors and IDEs.<br><br>
+
+                <u>(4)FULL DEVELOPMENT STORY</u><br>
+
+                Testing:<br>
+                -> With Karma for unit tests, you can know if you've broken things every time you save. And Protractor makes your scenario tests run faster and in a stable manner.<br>
+
+                Animation:<br>
+                -> Create high-performance, complex choreographies and animation timelines with very little code through Angular's intuitive API.<br>
+
+                Accessibility:<br>
+                -> Create accessible applications with ARIA-enabled components, developer guides, and built-in a11y test infrastructure.<br> </font>
+
+            <h1 id="styles" align="center"> Angular Components Overview</h1>
+            <font id="styling">Components are the main building block for Angular applications. Each component consists of:<br>
+
+                ->An HTML template that declares what renders on the page<br>
+                ->A Typescript class that defines behavior<br>
+                ->A CSS selector that defines how the component is used in a template<br>
+                ->Optionally, CSS styles applied to the template</font><br>
+
+            <h1 id="styles" align="center">Creating a component using the Angular CLI</h1> <br>
+            <font id="styling">To create a component using the Angular CLI:<br>
+
+                From a terminal window, navigate to the directory containing your application.<br>
+                Run the ng generate component component-name command, where component-name is the name of your new component.<br>
+                By default, this command creates the following:<br>
+
+                A folder named after the component<br>
+                A component file, component-name.component.ts<br>
+                A template file, component-name.component.html<br>
+                A CSS file, component-name.component.css<br>
+                A testing specification file, component-name.component.spec.ts<br>
+                Where component-name is the name of your component. </font> 
+
+
+            <h1 id="styles" align="center"> Templates, directives, and data binding </h1>
+            <font id="styling"> A template combines HTML with Angular markup that can modify HTML elements before they are displayed.            Template directives provide program logic, and binding markup connects your application data and the DOM.<br>
+
+                There are two types of data binding:<br>
+                Event binding lets your app respond to user input in the target environment by updating your application data.<br>
+                Property binding lets you interpolate values that are computed from your application data into the HTML.
+                Before a view is displayed, Angular evaluates the directives and resolves the binding syntax in the template to modify the HTML elements and the DOM, according to your program data and logic. Angular supports two-way data binding, meaning that changes in the DOM, such as user choices, are also reflected in your program data.<br>
+
+                Your templates can use pipes to improve the user experience by transforming values for display. For example, use pipes to display dates and currency values that are appropriate for a user's locale. Angular provides predefined pipes for common transformations, and you can also define your own pipes. </font>
+
+
+
+
+            <h1 id="styles" align="center">Routing </h1>
+            <font id="styling">The Angular Router NgModule provides a service that lets you define a navigation path    among the differen application states and view hierarchies in your app. It is modeled on the familiar browser        navigation conventions:<br>
+
+                Enter a URL in the address bar and the browser navigates to a corresponding page.<br>
+
+                Click links on the page and the browser navigates to a new page.<br>
+
+                Click the browser's back and forward buttons and the browser navigates backward and forward through the history of pages you've seen.<br>
+
+                The router maps URL-like paths to views instead of pages. When a user performs an action, such as clicking a link, that would load a new page in the browser, the router intercepts the browser's behavior, and shows or hides view hierarchies.<br>
+
+                If the router determines that the current application state requires particular functionality, and the module that defines it hasn't been loaded, the router can lazy-load the module on demand.<br>
+
+                The router interprets a link URL according to your app's view navigation rules and data state. You can navigate to new views when the user clicks a button or selects from a drop box, or in response to some other stimulus from any source. The router logs activity in the browser's history, so the back and forward buttons work as well.<br>
+
+                To define navigation rules, you associate navigation paths with your components. A path uses a URL-like syntax that integrates your program data, in much the same way that template syntax integrates your views with your program data. You can then apply program logic to choose which views to show or to hide, in response to user input and your own access rules.<br>
+
+
+                You've learned the basics about the main building blocks of an Angular application. The following diagram shows how these basic pieces are related.</font><br>
+            
+            <div class = "mydiv2">
+            <img class ="imgcenter" src="Images/angular1.png"><br>
+            </div>
+            <center><input id = "hide2" type = "button" value = "Hide" /> 
+            <input id = "show2" type = "button" value = "Show" /></center>
+
+            <font id="styling"> Together, a component and template define an Angular view.<br>
+
+                A decorator on a component class adds the metadata, including a pointer to the associated template.
+                Directives and binding markup in a component's template modify views based on program data and logic.
+                The dependency injector provides services to a component, such as the router service that lets you define navigation among views.</font>  <br>
+
+
+            <h1 id="styles" align="center">Two-way binding</h1>
+            <font id="styling">Two-way binding gives components in your application a way to share data. Use two-way binding to listen for events and update values simultaneously between parent and child components.</font>
+
+            <h1 id="styles" align="center">How two-way binding works</h1>
+            <font id="styling"> For two-way data binding to work, the @Output() property must use the pattern, inputChange, where input is the name of the @Input() property. For example, if the @Input() property is size, the @Output() property must be sizeChange.<br>
+
+                The following sizerComponent has a size value property and a sizeChange event. The size property is an @Input(), so data can flow into the sizerComponent. The sizeChange event is an @Output(), which allows data to flow out of the sizerComponent to the parent component.<br>
+
+                Next, there are two methods, dec() to decrease the font size and inc() to increase the font size. These two methods use resize() to change the value of the size property within min/max value constraints, and to emit an event that conveys the new size value.</font><br>
+        </div>
+
+
+        <hr>
+
+
+
+        <div align="center" id="footer">
+            <br>
+            <br>
+            <a href="#top"><img src="Images/scrollup.png" style="height:50px;width:100px;background-size: cover;border: 0px;margin-top: 5px;" ></a>
+            <a href="ContactUs.html" onmouseover="hovin(this);" onmouseout="hovout(this);" style="font-size:30px;color:#343148FF;margin-left:850px;text-decoration: none">Contact Us</a>
+            <a href="Aboutus.html" onmouseover="hovin(this);" onmouseout="hovout(this);" style="font-size:30px;color:#343148FF;margin-left: 50px;text-decoration: none" >About Us</a>
+            <a href="Feedback.html" onmouseover="hovin(this);" onmouseout="hovout(this);" style="font-size:30px;color:#343148FF;margin-left: 50px;text-decoration: none">Feedback</a>
+        </div>
+        
+           <script src="jscript.js"></script>
+
+    </body>
+</html>

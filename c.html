@@ -1,0 +1,153 @@
+<html>
+    <head>
+
+        <title>C</title>
+       <link rel="stylesheet" href="style.css">
+        
+        <script src="JQuery/JS/jquery-3.6.0.min.js"></script>
+        <script type = "text/javascript" language = "javascript">
+         $(document).ready(function() {
+
+            $("#show3").click(function () {
+               $(".mydiv3").fadeIn( 1000 );
+            });
+
+            $("#hide3").click(function () {
+               $(".mydiv3").fadeOut( 1000 );
+            });
+				
+         });
+      </script>
+    </head>
+    <body>
+        <div id="container" >
+            <div align=center; id="header">
+                <img src="Images/logo.png" align="left" style="width:150px;margin-top:-60px">
+                <a href="Index.html" onmouseover="hovin(this);" onmouseout="hovout(this);" style="font-size:30px;color:#343148FF;margin-left:840px;text-decoration: none">Home</a>
+                <a href="ExploreCourse.html" onmouseover="hovin(this);" onmouseout="hovout(this);" style="font-size:30px;color:#343148FF;margin-left:50px;text-decoration: none" >Explore Courses</a>
+                <a href="tips.html" onmouseover="hovin(this);" onmouseout="hovout(this);" style="font-size:30px;color:#343148FF;margin-left:50px;text-decoration: none">Tips</a>
+
+            </div>
+
+            <hr>
+
+        </div>
+        <div class="main1">
+        <p>
+            <h1 id="styles" align="center">C tutorial</h1>
+            <font id="styling"> The C Language is developed by Dennis Ritchie for creating system applications that directly interact with the hardware devices such as drivers, kernels, etc.<br>
+            C programming is considered as the base for other programming languages, that is why it is known as mother language </font> <br>
+
+         <div class = "mydiv3">
+        <img class ="imgcenter" style="width:450px;height:450px" src="Images/clanguage1.jpg"><br>
+            </div>
+        <center><input id = "hide3" type = "button" value = "Hide" /> 
+        <input id = "show3" type = "button" value = "Show" /></center>
+
+
+
+        <h1 id="styles" align="center"> Rules for defining variables </h1>
+        <font id="styling">A variable can have alphabets, digits, and underscore.<br>
+            A variable name can start with the alphabet, and underscore only. It can't start with a digit.<br>
+            No whitespace is allowed within the variable name.<br>
+            A variable name must not be any reserved word or keyword, e.g. int, float, etc.</font> 
+
+
+
+        <h1 id="styles" align="center"> There are many types of variables in c:</h1>
+
+        <font id="styling">(1)local variable
+            (2)global variable<br>
+            (3)static variable<br>
+            (4)automatic variable<br>
+            (5)external variable</font> 
+
+
+        <h1 id="styles" align="center">C Identifiers</h1>
+        <font id="styling"> C identifiers represent the name in the C program, for example, variables, functions, arrays, structures, unions, labels, etc. An identifier can be composed of letters such as uppercase, lowercase letters, underscore, digits, but the starting letter should be either an alphabet or an underscore. If the identifier is not used in the external linkage, then it is called as an internal identifier. If the identifier is used in the external linkage, then it is called as an external identifier.<br>
+
+            We can say that an identifier is a collection of alphanumeric characters that begins either with an alphabetical character or an underscore, which are used to represent various programming elements such as variables, functions, arrays, structures, unions, labels, etc. There are 52 alphabetical characters (uppercase and lowercase), underscore character, and ten numerical digits (0-9) that represent the identifiers. There is a total of 63 alphanumerical characters that represent the identifiers.</font>
+
+        <h1 id="styles" align="center">  Rules for constructing C identifiers </h1>
+        <font id="styling">The first character of an identifier should be either an alphabet or an underscore, and then it can be followed by any of the character, digit, or underscore.
+            It should not begin with any numerical digit.<br>
+            In identifiers, both uppercase and lowercase letters are distinct. Therefore, we can say that identifiers are case sensitive.<br>
+            Commas or blank spaces cannot be specified within an identifier.<br>
+            Keywords cannot be represented as an identifier.<br>
+            The length of the identifiers should not be more than 31 characters.<br>
+            Identifiers should be written in such a way that it is meaningful, short, and easy to read.</font>
+
+        <h1 id="styles" align="center"> Keywords in C </h1>
+        <font id="styling"> A keyword is a reserved word. You cannot use it as a variable name, constant name, etc. There are only 32 reserved words (keywords) in the C language.</font>
+
+        <h1 id="styles" align="center"> A list of 32 keywords in the c language is given below:</h1><br>
+        <font id="styling">(1)auto	<br>
+            (2)break<br>	
+            (3)case	<br>
+            (4)char	<br>
+            (5)const<br>	
+            (6)continue	<br>
+            (7)default	<br>
+            (8)do<br>
+            (9)double<br>
+            (10)else<br>
+            (11)enum<br>	
+            (12)extern<br>	
+            (13)float<br>	
+            (14)for	<br>
+            (15)goto<br>	
+            (16)if<br>
+            (17)int	<br>
+            (18)long<br>	
+            (19)register<br>	
+            (20)return<br>
+            (21)short<br>	
+            (22)signed<br>	
+            (23)sizeof<br>
+            (24)static<br>
+            (25)struct<br>	
+            (26)switch<br>	
+            (27)typedef<br>	
+            (28)union<br>	
+            (29)unsigned<br>	
+            (30)void<br>	
+            (31)volatile<br>	
+            (32)while </font>
+
+        <h1 id="styles" align="center">Types of identifiers</h1>
+
+
+        <font id="styling"><u>Internal Identifier:</u>If the identifier is not used in the external linkage, then it is known as an internal identifier. The internal identifiers can be local variables.</font>
+
+        
+
+            <font id="styling"> <u>External Identifier:</u>If the identifier is used in the external linkage, then it is known as an external identifier. The external identifiers can be function names, global variables</font> 
+
+            <h1 id="styles" align="center"> C Operators </h1>
+            <font id="styling">An operator is simply a symbol that is used to perform operations. There can be many types of operations like arithmetic, logical, bitwise, etc.<br>
+
+                There are following types of operators to perform different types of operations in C language.<br>
+
+                (1)Arithmetic Operators<br>
+                (2)Relational Operators<br>
+                (3)Shift Operators<br>
+                (4)Logical Operators<br>
+                (5)Bitwise Operators<br>
+                (6)Ternary or Conditional Operators<br>
+                (7)Assignment Operator<br>
+                (8)Misc Operator </font> <br>
+
+        </div>
+            <hr>
+            <div align="center" id="footer">
+            <br>
+            <br>
+            <a href="#top"><img src="Images/scrollup.png" style="height:50px;width:100px;background-size: cover;border: 0px;margin-top: 5px;" ></a>
+            <a href="ContactUs.html" onmouseover="hovin(this);" onmouseout="hovout(this);" style="font-size:30px;color:#343148FF;margin-left:850px;text-decoration: none">Contact Us</a>
+            <a href="Aboutus.html" onmouseover="hovin(this);" onmouseout="hovout(this);" style="font-size:30px;color:#343148FF;margin-left: 50px;text-decoration: none" >About Us</a>
+            <a href="Feedback.html" onmouseover="hovin(this);" onmouseout="hovout(this);" style="font-size:30px;color:#343148FF;margin-left: 50px;text-decoration: none">Feedback</a>
+        </div>
+        <script src="jscript.js"></script>
+
+            </body>
+        </html>

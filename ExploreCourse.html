@@ -1,0 +1,122 @@
+<html>
+    <head>
+
+        <title>EXPLORE COURSES</title>
+       <link rel="stylesheet" href="style.css">
+        <script src="course.js">
+        
+        
+        </script>
+       
+         <script src="JQuery/JS/jquery-3.6.0.min.js"></script>
+        <style>
+          
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div align=center; id="header">
+                <img src="Images/logo.png" align="left" style="width:150px;margin-top:-60px">
+                <a href="Index.html" onmouseover="hovin(this);" onmouseout="hovout(this);"  style="font-size:30px;color:#343148FF;margin-left:840px;text-decoration: none">Home</a>
+                <a href="ExploreCourse.html" onmouseover="hovin(this);" onmouseout="hovout(this);"  style="font-size:30px;color:#343148FF;margin-left:50px;text-decoration: none" >Explore Courses</a>
+                <a href="tips.html" onmouseover="hovin(this);" onmouseout="hovout(this);" style="font-size:30px;color:#343148FF;margin-left:50px;text-decoration: none">Tips</a>
+
+            </div>
+
+            <hr>
+        </div>
+
+        
+        
+        <div style="float: left;padding-top:480px;margin-left: 290px;padding-right: 30px;">
+        <input type="button" value="Left" onclick="prevImg();">
+        </div>
+        
+        <div align="center" style="float:left;padding-bottom: 20px">
+        <img src="images/a1.jfif" id="main" style="width:800px;height:500px;margin-top: 20px;"></div>
+        
+        <div style="float: right;padding-top:480px;margin-right: 285px;">
+        <input type="button" value="Right" onclick="nxtImg();">
+        </div>
+        <div style="clear: both;background-color: beige">
+        <img src="images/a1.jfif" id="img1" class="imgbor" style="height:100px;width:135px;margin-left:25px;" onclick="changeImg(1);">
+            
+        <img src="images/asp1.jpg" id="img2" class="imgbor" style="height:100px;width:135px;" onclick="changeImg(2);">
+        <img src="images/py1.jpg" id="img3" class="imgbor" style="height:100px;width:135px" onclick="changeImg(3);">
+        
+        <img src="images/ch1.jpg" id="img4" class="imgbor" style="height:100px;width:135px" onclick="changeImg(4);" >
+      
+        <img src="images/cp1.jpg" id="img5" class="imgbor" style="height:100px;width:135px" onclick="changeImg(5);" >
+        
+        <img src="images/r1.png" id="img6" class="imgbor" style="height:100px;width:135px" onclick="changeImg(6);" >
+        
+        <img src="images/j1.jpg" id="img7" class="imgbor" style="height:100px;width:135px" onclick="changeImg(7);" >
+       
+        <img src="images/n1.png" id="img8" class="imgbor" style="height:100px;width:135px" onclick="changeImg(8);">
+        
+        <img src="images/ph1.png" id="img9" class="imgbor" style="height:100px;width:135px" onclick="changeImg(9);" >
+        
+        <img src="images/c1.jpg" id="img10" class="imgbor" style="height:100px;width:135px" onclick="changeImg(10);" >
+        
+        </div>
+        <div>
+            <a href="angular.html" style="margin-left: 5%">Angular</a>
+            <a href="aspnet.html" style="margin-left: 5%">Asp.Net</a>
+            <a href="python.html" style="margin-left: 7%">Python</a>
+            <a href="csharp.html" style="margin-left: 8%">C#</a>
+            <a href="cplus.html" style="margin-left: 7%">C++</a>
+            <a href="React.html" style="margin-left: 7%">React</a>
+            <a href="java.html" style="margin-left: 8%">Java</a>
+            <a href="nodejs.html" style="margin-left: 7%">NodeJs</a>
+            <a href="php.html" style="margin-left: 7%">Php</a>
+            <a href="c.html" style="margin-left: 8%">C</a>
+           
+        </div>
+        
+      <!--  <div align="left" style="background-color: beige;width:100%;height:1800px;margin-top:-30px;font-size: 30px;color: black;"> 
+            <ul value="disc" style="word-spacing: 10px">
+                <li style="margin:2%"><a href="java.html"><h1 id="styles">Java</h1></a>Java is an object-oriented, class-based, concurrent, secured and general-purpose computer-programming language. It is a widely used robust technology.</li>
+
+                <li style="margin:2%"><a href="c.html"><h1 id="styles">C</h1></a>The C Language is developed by Dennis Ritchie for creating system applications that directly interact with the hardware devices such as drivers, kernels, etc</li>
+
+                <li style="margin:2%"><a href="cplus.html"><h1 id="styles">C++</h1></a><br> C++ is a general purpose, case-sensitive, free-form programming language that supports object-oriented, procedural and generic programming.</li>
+
+                <li style="margin:2%"><a href="python.html"><h1 id="styles">Python</h1></a>Python is a general-purpose interpreted, interactive, object-oriented, and high-level programming language. It was created by Guido van Rossum during 1985- 1990. Like Perl, Python source code is also available under the GNU General Public License (GPL). This tutorial gives enough understanding on Python programming language.</li>
+
+                <li style="margin:2%"><a href="php.html"><h1 id="styles">Php</h1></a>PHP is an open-source, interpreted, and object-oriented scripting language that can be executed at the server-side. PHP is well suited for web development. Therefore, it is used to develop web applications (an application that executes on the server and generates the dynamic page.)</li>
+
+                <li style="margin:2%"><a href="csharp.html"><h1 id="styles">C#</h1></a>C# is pronounced "C-Sharp".
+                    It is an object-oriented programming language created by Microsoft that runs on the .NET Framework.
+                    C# has roots from the C family, and the language is close to other popular languages like C++ and Java.
+                    The first version was released in year 2002. The latest version, C# 8, was released in September 2019.</li>
+
+                <li style="margin:2%"><a href="angular.html"><h1 id="styles">Angular</h1></a>Angular is a platform and framework for building single-page client applications using HTML and TypeScript.Angular is written in TypeScript. It implements core and optional functionality as a set of TypeScript libraries that you import into your apps.</li>
+
+                <li style="margin:2%"><a href="nodejs.html"><h1 id="styles">NodeJs</h1></a>Node.js is an open source server environment
+                    Node.js is free<br>
+                    Node.js runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.)<br>
+                    Node.js uses JavaScript on the server</li>
+
+                <li style="margin:2%"><a href="aspnet.html"><h1 id="styles">Asp.net</h1></a>What is ASP?
+                    ->ASP stands for Active Server Pages<br>
+                    ->ASP is a Microsoft Technology<br>
+                    ->ASP is a program that runs inside a web server</li>
+                <li style="margin:2%"><a href="React.html" ><h1 id="styles">React</h1></a>React is a JavaScript library that aims to simplify the development of visual interfaces.</li>
+
+            </ul>
+
+
+        </div>-->
+        <hr>
+        <div align="center" id="footer">
+            <br>
+            <br>
+            <a href="#top"><img src="Images/scrollup.png" style="height:50px;width:80px;background-size: cover;border: 0px;margin-top: 5px;" ></a>
+            <a href="ContactUs.html" onmouseover="hovin(this);" onmouseout="hovout(this);"  style="font-size:30px;color:#343148FF;margin-left:850px;text-decoration: none">Contact Us</a>
+            <a href="Aboutus.html" onmouseover="hovin(this);" onmouseout="hovout(this);"  style="font-size:30px;color:#343148FF;margin-left: 50px;text-decoration: none" >About Us</a>
+            <a href="Feedback.html" onmouseover="hovin(this);" onmouseout="hovout(this);"  style="font-size:30px;color:#343148FF;margin-left: 50px;text-decoration: none">Feedback</a>
+        </div>
+ <script src="jscript.js"></script>
+
+    </body>
+</html>

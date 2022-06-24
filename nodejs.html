@@ -1,0 +1,120 @@
+<html>
+    <head>
+
+        <title>NODE JS</title>
+        <link rel="stylesheet" href="style.css">
+        
+        <script src="JQuery/JS/jquery-3.6.0.min.js"></script>
+        <script type = "text/javascript" language = "javascript">
+            $(document).ready(function() {
+
+                $("#show6").click(function () {
+                    $(".mydiv6").fadeIn( 1000 );
+                });
+
+                $("#hide6").click(function () {
+                    $(".mydiv6").fadeOut( 1000 );
+                });
+
+            });
+        </script>
+    </head>
+    <body>
+        <div id="container">
+            <div align=center; id="header">
+                <img src="Images/logo.png" align="left" style="width:150px;margin-top:-60px">
+                <a href="Index.html" onmouseover="hovin(this);" onmouseout="hovout(this);" style="font-size:30px;color:#343148FF;margin-left:840px;text-decoration: none">Home</a>
+                <a href="ExploreCourse.html" onmouseover="hovin(this);" onmouseout="hovout(this);" style="font-size:30px;color:#343148FF;margin-left:50px;text-decoration: none" >Explore Courses</a>
+                <a href="tips.html" onmouseover="hovin(this);" onmouseout="hovout(this);" style="font-size:30px;color:#343148FF;margin-left:50px;text-decoration: none">Tips</a>
+
+            </div>
+
+            <hr>
+
+        </div>
+
+        <div class="main1">
+            <p>
+
+            <h1 id="styles" align="center"> What is Node.js? </h1>
+            <font id="styling">Node.js is an open source server environment<br>
+                Node.js is free<br>
+                Node.js runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.)<br>
+                Node.js uses JavaScript on the server<br>
+
+                Node.js uses asynchronous programming!</font>
+
+            <h1 id="styles" align="center">What is a Module in Node.js?</h1>
+            <font id="styling">Consider modules to be the same as JavaScript libraries.<br>
+
+                A set of functions you want to include in your application.<br>
+
+                Node.js has a built-in module called HTTP, which allows Node.js to transfer data over the Hyper Text Transfer Protocol (HTTP).</font>
+
+            <h1 id="styles" align="center">The Built-in HTTP Module:</h1>
+            <h3 style="word-spacing: 10px">To include the HTTP module, use the require() method</h3>
+
+            <h1 id="styles" align="center">Node.js as a Web Server:</h1>
+            <font id="styling"> The HTTP module can create an HTTP server that listens to server ports and gives a response back to the client.<br>
+                Use the createServer() method to create an HTTP server</font>
+
+
+            <h1 id="styles" align="center">Node.js as a File Server</h1>
+            <font id="styling">The Node.js file system module allows you to work with the file system on your computer.<br>
+                To include the File System module, use the require() method</font>
+
+            <h1 id="styles" align="center">Common use for the File System module:</h1>
+            <font id="styling">(1)Read files
+                (2)Create files<br>
+                (3)Update files<br>
+                (4)Delete files<br>
+                (5)Rename files</font>
+
+            <h1 id="styles" align="center">Read Files</h1>
+            The fs.readFile() method is used to read files on your computer
+
+            <h1 id="styles" align="center">Create Files</h1>
+            <font id="styling">The File System module has methods for creating new files:
+                (i)fs.appendFile()<br>
+                (ii)fs.open()<br>
+                (iii)fs.writeFile()<br>
+                (iv)The fs.appendFile() method appends specified content to a file. If the file does not exist, the file will be created</font>
+
+
+            <h1 id="styles" align="center">Update Files</h1>
+            <font id="styling">The File System module has methods for updating files:
+                (i)fs.appendFile()<br>
+                (ii)fs.writeFile()<br>
+                The fs.appendFile() method appends the specified content at the end of the specified file</font>
+
+            <h1 id="styles" align="center">Delete Files</h1>
+            <font id="styling">To delete a file with the File System module,  use the fs.unlink() method.
+                The fs.unlink() method deletes the specified file</font>
+
+            <h1 id="styles" align="center">Rename Files</h1>
+            <font id="styling">To rename a file with the File System module,  use the fs.rename() method.
+                The fs.rename() method renames the specified file <br></font>
+
+
+            <div class = "mydiv6">
+                <img class ="imgcenter" style="width:600px;height:400px" src="Images/nodejs1.png">
+            </div>
+            <center><input id = "hide6" type = "button" value = "Hide" /> 
+                <input id = "show6" type = "button" value = "Show" /></center>
+        </div>
+        <hr>
+
+
+
+        <div align="center" id="footer">
+            <br>
+            <br>
+            <a href="#top"><img src="Images/scrollup.png" style="height:50px;width:100px;background-size: cover;border: 0px;margin-top: 5px;" ></a>
+            <a href="ContactUs.html" onmouseover="hovin(this);" onmouseout="hovout(this);" style="font-size:30px;color:#343148FF;margin-left:900px;text-decoration: none">Contact Us</a>
+            <a href="Aboutus.html" onmouseover="hovin(this);" onmouseout="hovout(this);" style="font-size:30px;color:#343148FF;margin-left: 50px;text-decoration: none" >About Us</a>
+            <a href="Feedback.html" onmouseover="hovin(this);" onmouseout="hovout(this);" style="font-size:30px;color:#343148FF;margin-left: 50px;text-decoration: none">Feedback</a>
+        </div>
+
+<script src="jscript.js"></script>
+    </body>
+</html>
